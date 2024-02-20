@@ -1,0 +1,5 @@
+1) in terminal type tsc --init 
+
+2) npm i axios bcrypt compression cookie-session cors dotenv express helmet hpp http-status-codes jsonwebtoken pino-pretty typescript typescript-transform-paths winston
+
+3) npm i -D @types/compression @types/cookie-session @types/cors @types/express @types/hpp @types/jsonwebtoken @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-config-prettier eslint-plugin-import prettier ts-node tsc-alias tsconfig-paths

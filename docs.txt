@@ -1,0 +1,74 @@
+1) lens kubernet ide use  that enables users to connect and manage multiple Kubernetes clusters from Mac, Windows, and Linux platforms.
+
+The feature-rich and intuitive graphic interface allows users to deploy and manage their clusters directly from the console. At the same time, built-in dashboards provide key metrics and insight into everything running in the cluster, including deployments, configurations, networking, storage, access control, and even custom resources.
+
+
+2) Event driven microservices using
+
+3) communication between the microservices architecture is not http based but in this project communication between api gateway and auth service  is http based  api gateway to gig service or chat service between http but communication between user service and auth service jisme api gateway involve na ho are communicated between event based using rabbitmq to communicate and send data between microservices not an api gateway to services its just mattter of service between services
+
+
+4) In aws we are using elastic cloud where data is stored and kibana is  the dashboard kibana is used to view data that are stored in elastic search like all logs data metrics data and we going to view them using kibana
+
+5) we use sohail.zaryab61@gmail.com account for docker hub signin   
+
+6) Using MongoDB as a service with Docker provides several advantages in terms of ease of deployment, scalability, and manageability. Let me break down some key reasons why this approach might be beneficial:
+
+Isolation and Portability:
+
+Docker allows you to containerize your applications and their dependencies. This means that MongoDB, along with its configurations and dependencies, is packaged into a container. This container can run consistently across different environments, ensuring that your application behaves the same way regardless of the underlying infrastructure.
+Ease of Deployment:
+
+Deploying MongoDB as a service using Docker is generally faster and more straightforward than traditional installation methods. Docker containers can be easily pulled from a container registry, making it simple to deploy MongoDB instances with predefined configurations.
+Scalability:
+
+Docker provides easy scalability. You can run multiple MongoDB containers to distribute the load or create replica sets for high availability and fault tolerance. Docker Swarm or Kubernetes can be used for orchestration, making it simpler to manage and scale your MongoDB deployment.
+Resource Efficiency:
+
+Docker containers are lightweight compared to traditional virtual machines. They share the host OS kernel and use fewer resources, making them more efficient in terms of memory and CPU usage. This efficiency can lead to better utilization of your infrastructure.
+Consistent Development and Production Environments:
+
+With Docker, you can ensure that your development environment closely mirrors the production environment. This reduces the likelihood of issues arising due to differences in the environments and makes it easier to troubleshoot and test.
+Version Control and Rollbacks:
+
+Docker enables version control for your MongoDB container. You can tag different versions of your container, making it easy to roll back to a previous version if a new update causes issues.
+Infrastructure as Code (IaC):
+
+Docker and container orchestration tools like Kubernetes allow you to define your infrastructure as code. This makes it easier to automate the deployment, scaling, and management of MongoDB instances, promoting a DevOps approach.
+Easy Integration with CI/CD Pipelines:
+
+Docker containers can be seamlessly integrated into Continuous Integration and Continuous Deployment (CI/CD) pipelines. This allows for automated testing, building, and deployment of your application and its dependencies, including MongoDB.
+In summary, using MongoDB as a service with Docker provides a more streamlined, consistent, and scalable approach to deploying and managing databases, particularly in modern, containerized application architectures.
+
+
+Note : this is not only for mongodb this is also for MySQL and Postgres rabbitmq service Elasticsearch service and kibana service
+
+
+7) in redis docker service we are using alpine version very light weight docker image and mongodb we are using latest version image  notes: for elastic search docker images not use docker hub go for elastic office doc just simply search on google elasticsearch docker image and click on second link not docker hub link
+
+8) for storing database data because we use docker service so we created volume in folder
+
+9) what is mean by docker compose why we use ???
+ans: Docker Compose is a tool that allows you to define and run multi-container Docker applications. It provides a way to specify all the services, networks, and volumes required for a multi-container Docker application in a single file, usually named docker-compose.yml. With Docker Compose, you can define the configuration of your entire application stack, including its dependencies, and launch the entire stack with a single command.
+
+Here are some key concepts related to Docker Compose:
+
+docker-compose.yml:
+
+This is the configuration file used by Docker Compose. It's a YAML file where you define the services, networks, and volumes for your application. The file includes information such as the Docker images to use, container configurations, ports to expose, environment variables, and more.
+Services:
+
+Services are the main building blocks defined in a Docker Compose file. Each service typically corresponds to a container. For example, if your application uses a web server and a database, you would define two services, one for the web server and one for the database.
+Networks:
+
+Docker Compose allows you to define custom networks to facilitate communication between services. By default, a new network is created for each Docker Compose project, but you can define additional networks and specify which services should connect to them.
+Volumes:
+
+Volumes can be defined to persist data between container restarts. This is particularly important for databases or other services where data persistence is crucial. Docker Compose makes it easy to configure and manage volumes for your services.
+Commands:
+
+Docker Compose provides a set of commands to manage the entire lifecycle of your application stack. Common commands include docker-compose up to start the application, docker-compose down to stop and remove the containers, and docker-compose ps to list the status of running services.
+Environment Variables:
+
+Docker Compose allows you to set environment variables for services. This is useful for providing configuration parameters to your application, such as database connection strings or API keys.
+Using Docker Compose simplifies the process of managing complex applications with multiple services. It promotes a declarative approach to defining your infrastructure, making it easier to share and reproduce environments across different development and deployment environments. Additionally, Docker Compose integrates well with other Docker tools and orchestration platforms like Docker Swarm and Kubernetes.

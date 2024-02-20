@@ -1,0 +1,30 @@
+for run commmand npm run dev
+
+1) in terminal type tsc --init
+2) in terminal type npm i -D @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-config-prettier eslint-plugin-import prettier eslint
+3) npm i -g nodemon
+4)npm i typescript typescript-transform-paths
+5)npm i D ts-node tsc-alias tsconfig-paths
+6)>npm i pino-pretty
+7) npm i express express-async-errors amqplib dotenv ejs email-templates http-status-codes nodemailer winston
+8) npm i D @types/email-templates @types/express @types/amqplib @types/nodemailer
+
+9) health route is not pass in the api gateway because there is no any sense
+
+10)>npm i @elastic/elasticsearch
+
+11) for you email template engine check ejs install in package json
+
+12) ethereal.email    Username	janet.dach@ethereal.email   Password	At8XMC5aYxhYfhhBzJ   add in .env file this is just for testing but if you close this and open again it will generate  new username and password
+
+13) for app icon go for https://imgbb.com/ you can upload any pic from folder it will convert into url
+
+14) see the testing vedeo 68 69 70
+
+15) for last if you make docker file for this service go to dockerhub search nodejs
+
+16) pm2.io we use in pakage json build script start : ""
+
+17) we install shell package because when we create build it not contain email folder so we add this using npm i fs-extra
+
+and also install types npm i --save-dev @types/fs-extra  if still they are issue so manually copy email folder and move to build

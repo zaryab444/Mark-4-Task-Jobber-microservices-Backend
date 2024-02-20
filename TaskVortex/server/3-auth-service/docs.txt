@@ -1,0 +1,22 @@
+1) npm i elastic/elasticsearch amqplib bcryptjs compression cors dotenv express express-async-errors helmet hpp http-status-codes joi jsonwebtoken typescript typescript-transform-paths winston
+aths
+
+2) install dev dependencies npm i @types/amqplib @types/bcryptjs @types/compression @types/cors @types/express @types/hpp @types/jsonwebtoken @types/lodash @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-config-prettier eslint-plugin-import prettier ts-node ts-alias tsconfig-paths
+
+3) >npm i --save-dev @types/uuid
+
+4) npm install mysql2 --save
+
+5) table plus use for database record see only this for mysql
+
+6) front end to api gateway - http(s)://<host>:<port>/api/v1/gateway/auth/signup
+
+   API Gateway to Auth Service - http(s)://<api-gateway-host>:<port>/api/v1/auth/signup
+
+/signup this thing try naw and change accordingly like signin verifyemail etc
+
+7) cloudinary account sohail.zaryab61 wala account login ha 
+
+8) after all set go to volume folder add configuration in docker-compose-yaml and open terminal and type >docker compose up -d users
+
+9) for database we use tableplus see mysql data

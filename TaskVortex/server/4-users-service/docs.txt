@@ -1,0 +1,7 @@
+1) npm package npm i @elastic/elasticsearch amqplib bcryptjs compression cors dotenv express express-async-errors helmet hpp http-status-codes joi jsonwebtoken typescript typescript-transform-paths winston pino-pretty
+
+2) npm dev dependencies  npm i @types/amqplib @types/bcryptjs @types/compression @types/cors @types/express @types/hpp @types/jsonwebtoken @types/lodash @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-config-prettier eslint-plugin-import prettier ts-node ts-alias tsconfig-paths
+
+3) after all set go to volume folder add configuration in docker-compose-yaml and open terminal and type >docker compose up -d users
+
+4) for database we use mongodb compass to see the data

@@ -1,0 +1,52 @@
+1) first simple install npm i express
+
+2) npm i -D @babel/cli @babel/preset-env @babel/preset-typescript @types/express @types/jsonwebtoken  then install custom dev dependencies
+
+The command you provided, npm i -D @babel/cli @babel/preset-env @babel/preset-typescript @types/express @types/jsonwebtoken, installs several packages related to Babel and TypeScript. Let's break down what each of these packages is for:
+
+@babel/cli: This is the command-line interface for Babel. It allows you to transpile your code using Babel from the terminal.
+
+@babel/preset-env: This is a preset in Babel that enables you to use the latest JavaScript features without having to manually configure which transformations or plugins to use. It automatically determines the necessary transformations based on your specified target environments.
+
+@babel/preset-typescript: This preset is used to transpile TypeScript code. TypeScript is a superset of JavaScript that adds static typing to the language.
+
+@types/express: This package provides TypeScript type definitions for the Express.js web framework. When you write TypeScript code that interacts with Express, having these type definitions allows your IDE to provide better autocompletion and type checking.
+
+@types/jsonwebtoken: This package provides TypeScript type definitions for the jsonwebtoken library, which is commonly used for handling JSON Web Tokens (JWT) in Node.js applications.
+
+Now, regarding the question of why Babel is used:
+
+JavaScript Compatibility: Babel is a JavaScript compiler that allows developers to use the latest ECMAScript features even if the target environment (like browsers or Node.js versions) doesn't support them yet.
+
+Transpiling TypeScript: While TypeScript has its own compiler, Babel can also be configured to transpile TypeScript code. This is useful in projects that want to use Babel for JavaScript and TypeScript, allowing a consistent build process.
+
+Browser Compatibility: Babel is often used to ensure that JavaScript code is compatible with a wide range of browsers by transpiling modern JavaScript syntax down to an older version that is more widely supported.
+
+Code Transformation: Babel is extensible and allows you to use plugins to transform your code in various ways. This flexibility is beneficial for customizing the build process according to your project's needs.
+
+In summary, the use of Babel in this context suggests that the project may involve writing code in TypeScript and aims to ensure compatibility with a specific set of target environments, including possibly older browsers or Node.js versions. It also indicates a desire to take advantage of the latest JavaScript features while maintaining compatibility.
+
+3) npm i typescript after install you can check by type tsc now type npm i -g typescript now check tsc--init
+
+4) For Windows users, NODE_ENV is not recognized as an internal or external command, Executable program or batch file.
+
+To fix this, install cross-env
+
+npm install --save-dev cross-env
+
+5) npm i @elastic/elasticsearch
+
+6) we use cloudinary image service
+
+npm i cloudinary
+
+7) for error handling 
+npm i http-status-codes
+
+8) npm i jsonwebtoken
+
+9) npm i winston
+
+10) npm i winston-elasticsearch
+
+11)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 token

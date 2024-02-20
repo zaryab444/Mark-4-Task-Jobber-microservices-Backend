@@ -1,0 +1,7 @@
+1) we use socket.io for bi directional communication bi directional means client to server
+
+2) frontend to api gateway is used socket.io communication  
+
+3) the frontend not directly go to the chat service it always go to the api gateway in this case frontend is act as a client and api gateway is act as a server
+
+4) now api gateway communicate to chat service where api gateway act as a client and chatservice act as a server
